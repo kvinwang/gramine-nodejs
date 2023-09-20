@@ -8,8 +8,6 @@ This project demonstrates how to run Node.js applications securely inside Gramin
 - Operating System: Ubuntu 20.04 (other Linux distributions might work but I haven't tested)
 
 ## Getting Started
-
-## Download the prebuilt package
 ### Downloading the Prebuilt Package
 
 1. Visit the project's [release page on GitHub](https://github.com/kvinwang/gramine-nodejs/releases).
@@ -21,6 +19,7 @@ This project demonstrates how to run Node.js applications securely inside Gramin
 Before you run your application, replace the default `index.js` with the `.js` file you wish to execute.
 
 #### With SGX Support
+Note: This requires the hardare support SGX and properly configured, and the intel aesmd service need to be installed.
 
 To execute your Node.js application within an SGX enclave, utilize the following command:
 
