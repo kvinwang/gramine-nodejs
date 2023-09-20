@@ -27,6 +27,11 @@ type = "chroot"
 path = "/etc"
 uri = "file:/etc"
 
+[[fs.mounts]]
+type = "chroot"
+path = "/data"
+uri = "file:data"
+
 [sgx]
 debug = false
 nonpie_binary = true
@@ -51,4 +56,5 @@ allowed_files = [
   "file:/etc/ssl/openssl.cnf",
   "file:Rocket.toml",
   "file:index.js",
+  "file:data/",
 ]
